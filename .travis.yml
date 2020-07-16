@@ -24,7 +24,7 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - addon-google_apis-google-$ANDROID_API_LEVEL
-  before_install:
-    - chmod +x gradlew
+before_install:
+  - chmod +x gradlew
 script:
   - "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
